@@ -77,10 +77,10 @@ nav li a{
     margin: 0 35px 0 200px;
     
 }
-.banner-contant{
+.banner-content{
     max-width: 580px;
 }
-.banner-greethings{
+.banner-greetings{
     font-size: 45px;
     font-weight: 600;
 }
@@ -90,6 +90,7 @@ nav li a{
 }
 .banner-profile-pic{
     width: 580px;
+    height: 580px;
 }
 /* main style */
 main{
@@ -161,4 +162,26 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
+}
+
+/* responsive media query */
+.hide{
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    .skills-container, 
+    .resume-container, 
+      footer,
+     .about-items{
+        flex-direction: column;
+    }
+    footer, .about{
+        padding: 20px;
+    }
+    .footer-column{
+        padding: 20px;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
 }
